@@ -1,0 +1,11 @@
+.coin_display {
+  margin: 25px;
+  text-align: center;
+  display: block;
+  &:hover img {
+    transform: scale(1.05);
+  }
+  img {
+    transition: 0.3s all ease-in-out;
+  }
+}

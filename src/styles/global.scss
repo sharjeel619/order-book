@@ -1,0 +1,74 @@
+@import "./variables.scss";
+@font-face {
+  font-family: "Gilroy";
+  src: url(/fonts/Gilroy-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(/fonts/Gilroy-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(/fonts/Gilroy-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+body {
+  font-family: Gilroy;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $text-color;
+  margin: 0;
+  background-color: #fcfcfc;
+  overflow-x: hidden;
+  width: 100vw;
+}
+a {
+  text-decoration: none;
+  color: $text-color !important;
+}
+
+p {
+  margin: 8px 0;
+  line-height: 20px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 44px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.autocomplete-search-bar {
+  // width: 500px;
+  position: absolute !important;
+  bottom: -20px;
+  transform: translateX(-50%);
+  left: 50%;
+  // .ant-select-selector {
+  //   border-radius: 50px !important;
+  //   height: 50px !important;
+  //   .ant-select-selection-search {
+  //     input {
+  //       height: 50px !important;
+  //     }
+  //   }
+  //   .ant-select-selection-placeholder {
+  //     font-size: 16px;
+  //     margin-top: 9px;
+  //   }
+  // }
+}
+
+.highlight_red {
+  transition: 0.2s all ease-in-out;
+  background: lightpink !important;
+}
+.highlight_green {
+  transition: 0.2s all ease-in-out;
+  background: lightgreen !important;
+}
